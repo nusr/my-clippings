@@ -14,7 +14,7 @@ export function firstLine(lines: string[]): FirstLine | Boolean {
     };
 }
 
-export function secondLine(lines: string[]): SecondLine | Boolean {
+export function secondLine(lines: string[], language: any): SecondLine | Boolean {
 
     if (!_.isString(lines[1])) {
         return false;
@@ -26,9 +26,9 @@ export function secondLine(lines: string[]): SecondLine | Boolean {
     for (let y = 0; y < tempLine.length; y += 1) {
         let el = tempLine[y];
         // @todo - describe time parsing
-        if (el.match(/Added on/)) {
-            let [, temp] = el.split(',');
-            singleRecord.time = new Date(trim(temp))
+        if (el.match(_.get(language, 'tool.parseLines.addType'))) {
+            let [, temp] = el.split(_.get(language, 'tool.parseLines.addText'));
+            singleRecord.time = new Date(trim(temp)).getTime()
         }
         // Examples of type and location
         // * Highlight Loc. 516
@@ -38,23 +38,23 @@ export function secondLine(lines: string[]): SecondLine | Boolean {
         // * Bookmark Loc. 241
 
         // type: Highlight | Bookmark | Note
-        if (el.match(/Highlight/)) {
-            singleRecord.type = 'Highlight';
-        } else if (el.match(/Bookmark/)) {
-            singleRecord.type = 'Bookmark';
-        } else if (el.match(/Note/)) {
-            singleRecord.type = 'Note';
+        if (el.match(_.get(language, 'tool.parseLines.highlightType'))) {
+            singleRecord.type = _.get(language, 'tool.parseLines.highlightText')
+        } else if (el.match(_.get(language, 'tool.parseLines.bookmarkType'))) {
+            singleRecord.type = _.get(language, 'tool.parseLines.bookmarkText')
+        } else if (el.match(_.get(language, 'tool.parseLines.noteType'))) {
+            singleRecord.type = _.get(language, 'tool.parseLines.noteText')
         }
 
         // on Page (if exists)
-        if (el.match(/on Page/)) {
-            const temp: string[] = el.split('on Page');
+        if (el.match(_.get(language, 'tool.parseLines.pageType'))) {
+            const temp: string[] = el.split(_.get(language, 'tool.parseLines.pageText'));
             singleRecord.page = trim(_.last(temp) || '');
         }
 
         // location
-        if (el.match(/Loc./)) {
-            const temp: string[] = el.split('Loc.');
+        if (el.match(_.get(language, 'tool.parseLines.locationType'))) {
+            const temp: string[] = el.split(_.get(language, 'tool.parseLines.locationText'));
             singleRecord.location = trim(_.last(temp) || '');
         }
     }
@@ -71,12 +71,6 @@ export function thirdLine(lines: string[]): string {
 }
 
 export function trim(str: string): string {
-    str = str.replace(/^\s+/, '');
-    for (let i = str.length - 1; i >= 0; i--) {
-        if (/\S/.test(str.charAt(i))) {
-            str = str.substring(0, i + 1);
-            break;
-        }
-    }
-    return str;
+
+    return _.trim(str, '\n\t ')
 }

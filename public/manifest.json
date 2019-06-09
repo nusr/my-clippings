@@ -1,4 +1,10 @@
 {
-  "short_name": "My Clippings",
-  "name": "Kindle My Clippings"
+  "name": "My Clippings",
+  "description": "Kindle My Clippings Extension",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "favicon.png"
+  }
 }

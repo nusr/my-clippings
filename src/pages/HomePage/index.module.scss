@@ -1,5 +1,10 @@
+@import '../../themes/utils.scss';
+
 .container {
-  text-align: center;
+  padding: $base-distance;
 }
 
 
+.bookMenu {
+  width: $menu-width;
+}

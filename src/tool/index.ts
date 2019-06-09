@@ -18,7 +18,7 @@ function splitRecord(record: string): string[] {
 }
 
 
-function makeArray(records: string[]) {
+function makeArray(records: string[], language: any) {
     let result: any = [];
     for (let record of records) {
         // split record into lines (section of a record - title / time / text)
@@ -31,7 +31,7 @@ function makeArray(records: string[]) {
             singleRecord.author = first.author;
         }
         //second line - type, location, time,page
-        const second: any = secondLine(lines);
+        const second: any = secondLine(lines, language);
         if (second) {
             singleRecord =
                 {
@@ -51,7 +51,7 @@ function makeArray(records: string[]) {
 }
 
 
-export function parseContent(data: string) {
+export function parseContent(data: string, language: any) {
     const records: string[] = splitIntoRecords(data);
-    return makeArray(records);
+    return makeArray(records, language);
 }
