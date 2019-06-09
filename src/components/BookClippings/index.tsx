@@ -1,6 +1,6 @@
 import React from 'react';
 import {RecordItem} from '../../type'
-
+import styles from './index.module.scss'
 import _ from 'lodash'
 
 type Props = {
@@ -12,16 +12,17 @@ const BookClippings: React.FunctionComponent<Props> = ({
     if (_.isEmpty(data)) {
         return null;
     }
+    console.log(data)
     return (
-        <div>
+        <div className={styles.container}>
             {
                 data.map((item: RecordItem) => (
-                    <div key={item.time || item.backId}>
+                    <div key={item.time || item.title + item.location} className={styles.item}>
                         <div>
-                            <span>{item.title}</span>
+                            <span className={styles.title}>{item.title}</span>
                             <span>{item.author}</span>
                         </div>
-                        <div>
+                        <div className={styles.info}>
                             <span>{item.type}</span>
                             <span>{item.location}</span>
                             <span>{item.page}</span>

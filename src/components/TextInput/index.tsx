@@ -1,6 +1,7 @@
 import React from 'react';
 import _ from 'lodash'
 import styles from './index.module.scss'
+
 type Props = {
     onChange: (result: string) => void
 }
@@ -18,7 +19,7 @@ const TextInput: React.FunctionComponent<Props> = ({onChange}) => {
     }
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} >
             <input type="file" accept=".txt" onChange={handleChange}/>
         </div>
     )

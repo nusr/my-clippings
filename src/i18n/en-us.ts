@@ -1,7 +1,7 @@
 export default {
-    'tool.index.splitFlag': '\r\n==========',
+    'tool.index.splitFlag': '==========',
     'tool.parseLines.addType': /Added on/,
-    'tool.parseLines.addText': ',',
+    'tool.parseLines.addText': 'Added on',
     'tool.parseLines.highlightType': /Highlight/,
     'tool.parseLines.highlightText': 'Highlight',
     'tool.parseLines.bookmarkType': /Bookmark/,
@@ -11,5 +11,6 @@ export default {
     'tool.parseLines.pageType': /on Page/,
     'tool.parseLines.pageText': /on Page/,
     'tool.parseLines.locationType': /Loc./,
-    'tool.parseLines.locationText': 'Loc.'
+    'tool.parseLines.locationText': 'Loc.',
+    "page.HomePage.emptyTip":''
 }

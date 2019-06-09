@@ -1,7 +1,7 @@
 export default {
-    'tool.index.splitFlag': '\r\n==========',
+    'tool.index.splitFlag': '==========',
     'tool.parseLines.addType': /添加于/,
-    'tool.parseLines.addText': ',',
+    'tool.parseLines.addText': '添加于',
     'tool.parseLines.highlightType': /标注/,
     'tool.parseLines.highlightText': "标注",
     'tool.parseLines.bookmarkType': /书签/,
@@ -12,4 +12,5 @@ export default {
     'tool.parseLines.pageText': '第',
     'tool.parseLines.locationType': /位置/,
     'tool.parseLines.locationText': '位置',
+    "page.HomePage.emptyTip": '请先选择剪贴文件！'
 }

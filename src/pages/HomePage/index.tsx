@@ -8,31 +8,37 @@ import BookMenu from '../../components/BookMenu'
 import BookClippings from '../../components/BookClippings'
 import _ from 'lodash'
 
+function getItemTitle(item: RecordItem): string {
+    let key: string = item.title || ''
+    const author: string = item.author || ''
+    if (author) {
+        key = `${key}-${author}`
+    }
+    return key;
+}
+
 const HomePage: React.FunctionComponent = () => {
     const [contentList, setContentList] = useState<RecordItem[]>([])
     const [menuList, setMenuList] = useState<string[]>([])
     const [currentMenu, setCurrentMenu] = useState<string>('')
     const [bookData, setBookData] = useState<RecordItem[]>([])
     useEffect(() => {
-        const temp: RecordItem[] = contentList.filter(v => v.key && v.key === currentMenu)
+        const temp: RecordItem[] = contentList.filter(v => {
+            const key: string = getItemTitle(v)
+            return key && key === currentMenu
+        })
         setBookData(temp)
-        console.log(temp)
     }, [contentList, currentMenu])
 
     function handleContentChange(data: string) {
+        console.log(data)
         const result: RecordItem[] = parseContent(data, zhCn)
         const temp: string[] = []
         result.forEach((item: RecordItem) => {
-            let key: string = item.title || ''
-            const author: string = item.author || ''
-            if (author) {
-                key = `${key}-${author}`
-            }
-            item.key = key;
+            const key: string = getItemTitle(item)
             if (temp && !temp.includes(key)) {
                 temp.push(key)
             }
-            item.backId = _.uniqueId('kindle-')
         })
         setContentList(result)
         setMenuList(temp)
@@ -43,17 +49,26 @@ const HomePage: React.FunctionComponent = () => {
         setCurrentMenu(item)
     }
 
+    const checkContent = _.isEmpty(contentList)
+    const Content = () => (
+        <div className={styles.content}>
+            <div className={styles.bookMenu}>
+                <BookMenu menuList={menuList} onChange={handleMenuChange} value={currentMenu}/>
+            </div>
+            <div className={styles.bookClippings}>
+                <BookClippings data={bookData}/>
+            </div>
+        </div>
+    )
+    const EmptyTip = () => (
+        <div className={styles.emptyTip}>请先选择剪贴文件！</div>
+    )
+
     return (
         <div className={styles.container}>
-            <TextInput onChange={handleContentChange}/>
-            <div>
-                <div className={styles.bookMenu}>
-                    <BookMenu menuList={menuList} onChange={handleMenuChange} value={currentMenu}/>
-                </div>
-                <div>
-                    <BookClippings data={bookData}/>
-                </div>
-            </div>
+            <TextInput onChange={handleContentChange} />
+            {checkContent ? <EmptyTip/> : <Content/>}
+
         </div>
     );
 }

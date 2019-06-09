@@ -8,3 +8,20 @@
 .bookMenu {
   width: $menu-width;
 }
+
+.content {
+  display: flex;
+}
+
+.bookClippings {
+  flex: 1;
+  border: 1px solid $border-color;
+  border-left: 0;
+}
+
+.emptyTip {
+  padding: $base-distance / 2;
+  font-weight: bold;
+  text-align: center;
+  color: $primary-color;
+}

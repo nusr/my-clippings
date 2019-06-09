@@ -4,7 +4,7 @@ export interface FirstLine {
 }
 
 export interface SecondLine {
-    time: number;
+    time: string;
     type: string;
     location: string;
     page: string;
@@ -12,7 +12,8 @@ export interface SecondLine {
 
 export interface RecordItem extends SecondLine, FirstLine {
     text: string;
-    key: string;
-    backId:string;
 }
 
+export interface LanguageData {
+    [key: string]: string;
+}

@@ -1,0 +1,18 @@
+@import '../../themes/utils';
+
+.container {
+
+}
+
+.item {
+  padding: $base-distance / 2;
+  border-bottom: 1px solid $border-color;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.info {
+  color: $sub-content-color;
+}

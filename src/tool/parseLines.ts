@@ -3,32 +3,35 @@ import _ from 'lodash'
 import {FirstLine, SecondLine} from '../type'
 
 export function firstLine(lines: string[]): FirstLine | Boolean {
-    if (!_.isString(lines[0])) {
+    const [line,] = lines
+    if (!_.isString(line)) {
         return false;
     }
-    const title: string[] = lines[0].split(' (');
-    const author: string = title[1] ? title[1].slice(0, -1) : '';
+    const [title, author] = line.split(' (');
+    const realAuthor: string = author ? author.slice(0, -1) : '';
     return {
-        title: title[0],
-        author
+        title: title,
+        author: realAuthor
     };
 }
 
 export function secondLine(lines: string[], language: any): SecondLine | Boolean {
-
-    if (!_.isString(lines[1])) {
+    const [, line,] = lines
+    if (!_.isString(line)) {
         return false;
     }
 
-    const tempLine = lines[1].split('|');
+    const tempLine = line.split('|');
 
     let singleRecord: Partial<SecondLine> = {};
     for (let y = 0; y < tempLine.length; y += 1) {
-        let el = tempLine[y];
+        let el = tempLine[y]
         // @todo - describe time parsing
         if (el.match(_.get(language, 'tool.parseLines.addType'))) {
-            let [, temp] = el.split(_.get(language, 'tool.parseLines.addText'));
-            singleRecord.time = new Date(trim(temp)).getTime()
+            const addText: string = _.get(language, 'tool.parseLines.addText')
+            let [, temp] = el.split(addText);
+            // TODO 日期格式化问题 不同语言不一致
+            singleRecord.time = temp;
         }
         // Examples of type and location
         // * Highlight Loc. 516
@@ -63,14 +66,18 @@ export function secondLine(lines: string[], language: any): SecondLine | Boolean
 }
 
 export function thirdLine(lines: string[]): string {
-    if (!_.isString(lines[2])) {
+    const [, , line,] = lines
+    if (!_.isString(line)) {
         return ''
     }
-    return trim(lines[2]);
+    return trim(line);
 
 }
 
-export function trim(str: string): string {
-
-    return _.trim(str, '\n\t ')
+function trim(str: string): string {
+    if (!_.isString(str)) {
+        return ''
+    }
+    return _.trim(str)
 }
+

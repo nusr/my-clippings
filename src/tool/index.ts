@@ -1,9 +1,10 @@
 import {firstLine, secondLine, thirdLine} from './parseLines'
-import {RecordItem} from '../type'
+import {RecordItem, LanguageData} from '../type'
 
+import _ from 'lodash'
 
-function splitIntoRecords(data: string): string[] {
-    return data.split('\r\n==========');
+function splitIntoRecords(data: string, language: LanguageData): string[] {
+    return data.split(_.get(language, 'tool.index.splitFlag'));
 }
 
 function splitRecord(record: string): string[] {
@@ -44,7 +45,9 @@ function makeArray(records: string[], language: any) {
         if (third) {
             singleRecord.text = third;
         }
-        result.push(singleRecord);
+        if (singleRecord.text) {
+            result.push(singleRecord);
+        }
 
     }
     return result;
@@ -52,6 +55,6 @@ function makeArray(records: string[], language: any) {
 
 
 export function parseContent(data: string, language: any) {
-    const records: string[] = splitIntoRecords(data);
+    const records: string[] = splitIntoRecords(data, language);
     return makeArray(records, language);
 }
