@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import Index from './pages/HomePage';
+import HomePage from './pages/HomePage';
 
-ReactDOM.render(<Index/>, document.getElementById('root'));
+ReactDOM.render(<HomePage/>, document.getElementById('root'));
 

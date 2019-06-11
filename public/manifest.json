@@ -1,10 +1,27 @@
 {
   "name": "My Clippings",
-  "description": "Kindle My Clippings Extension",
-  "version": "1.0",
+  "short_name": "Clippings",
+  "description": "Organizing your Kindle Highlight、Bookmark and Notes so easy.",
+  "version": "0.0.1",
+  "version_name": "0.0.1",
   "manifest_version": 2,
+  "default_locale": "zh",
+  "author": "Steve Xu",
   "browser_action": {
-    "default_popup": "index.html",
-    "default_icon": "favicon.png"
+    "default_icon": "favicon.png",
+    "default_title": "My Clippings"
+  },
+  "homepage_url": "https://github.com/nusr/my-clippings",
+  "offline_enabled": "true",
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "content_security_policy": "script-src 'self'; object-src 'self';",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
   }
 }
