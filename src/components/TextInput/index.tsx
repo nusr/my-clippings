@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import _ from 'lodash'
 import styles from './index.module.scss'
 

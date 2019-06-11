@@ -2,12 +2,11 @@ import React, {useEffect, useState} from 'react';
 import styles from "./index.module.scss";
 import TextInput from '../../components/TextInput'
 import {parseContent} from '../../tool'
-import zhCn from '../../i18n/zh-cn'
 import {RecordItem} from '../../type'
 import BookMenu from '../../components/BookMenu'
 import BookClippings from '../../components/BookClippings'
 import _ from 'lodash'
-
+import Store from '../../store'
 
 function getItemTitle(item: RecordItem): string {
     let key: string = item.title || ''
@@ -19,6 +18,7 @@ function getItemTitle(item: RecordItem): string {
 }
 
 const HomePage: React.FunctionComponent = () => {
+    const {languageData} = Store.useContainer()
     const [contentList, setContentList] = useState<RecordItem[]>([])
     const [menuList, setMenuList] = useState<string[]>([])
     const [currentMenu, setCurrentMenu] = useState<string>('')
@@ -32,7 +32,7 @@ const HomePage: React.FunctionComponent = () => {
     }, [contentList, currentMenu])
 
     function handleContentChange(data: string) {
-        const result: RecordItem[] = parseContent(data, zhCn)
+        const result: RecordItem[] = parseContent(data, languageData)
         const temp: string[] = []
         result.forEach((item: RecordItem) => {
             const key: string = getItemTitle(item)
@@ -48,6 +48,7 @@ const HomePage: React.FunctionComponent = () => {
     function handleMenuChange(item: string) {
         setCurrentMenu(item)
     }
+
     const checkContent = _.isEmpty(contentList)
     const Content = () => (
         <div className={styles.content}>

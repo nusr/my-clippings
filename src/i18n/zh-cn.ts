@@ -12,5 +12,5 @@ export default {
     'tool.parseLines.pageText': '第',
     'tool.parseLines.locationType': /位置/,
     'tool.parseLines.locationText': '位置',
-    "page.HomePage.emptyTip": '请先选择剪贴文件！'
+    "page.HomePage.emptyTip": '请先选择我的剪贴文件！'
 }
