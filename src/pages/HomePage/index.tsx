@@ -60,14 +60,11 @@ const HomePage: React.FunctionComponent = () => {
             </div>
         </div>
     )
-    const EmptyTip = () => (
-        <div className={styles.emptyTip}>请先选择剪贴文件！</div>
-    )
 
     return (
         <div className={styles.container}>
             <TextInput onChange={handleContentChange}/>
-            {checkContent ? <EmptyTip/> : <Content/>}
+            {checkContent ? null : <Content/>}
 
         </div>
     );
