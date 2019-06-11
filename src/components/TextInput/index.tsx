@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import _ from 'lodash'
 import styles from './index.module.scss'
 
@@ -18,9 +18,11 @@ const TextInput: React.FunctionComponent<Props> = ({onChange}) => {
         }
     }
 
+
     return (
-        <div className={styles.container} >
-            <input type="file" accept=".txt" onChange={handleChange}/>
+        <div className={styles.container}>
+            <label htmlFor="file-upload" className={styles.label}>Select your file</label>
+            <input type="file" accept=".txt" onChange={handleChange} id="file-upload" className={styles.input}/>
         </div>
     )
 }

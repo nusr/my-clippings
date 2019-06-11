@@ -9,7 +9,6 @@ function activeNewTab() {
             chrome.tabs.update(window.tabId, {selected: true});
         } else {
             chrome.tabs.create({url}, function (tab) {
-                console.log(tab)
                 window.tabId = tab.id;
             });
         }

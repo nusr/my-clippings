@@ -2,4 +2,21 @@
 
 .container {
   padding: $base-distance / 2;
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  position: absolute;
+  left: -9999px;
+}
+
+.label {
+  padding: $base-distance / 2;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary-color;
+  }
 }

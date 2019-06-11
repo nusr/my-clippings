@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="629cb70f-417e-40ee-97a4-fcd0b852a8f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/background.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BookMenu/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BookMenu/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TextInput/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TextInput/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TextInput/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TextInput/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/HomePage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomePage/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/themes/utils.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/themes/utils.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,32 +22,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="382">
-                <caret line="29" selection-start-line="29" selection-end-line="29" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/src/pages/HomePage/index.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-117">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="Gfm" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.html">
+        <entry file="file://$PROJECT_DIR$/src/components/TextInput/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+            <state relative-caret-position="345">
+              <caret line="23" column="64" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="64" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/TextInput/index.module.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/manifest.json">
+        <entry file="file://$PROJECT_DIR$/src/themes/utils.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            <state relative-caret-position="15">
+              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -64,6 +80,7 @@
       <find>item.t</find>
       <find>min-</find>
       <find>chrome</find>
+      <find>console.log</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
@@ -84,13 +101,10 @@
         <option value="$PROJECT_DIR$/src/tests/HomePage.test.tsx" />
         <option value="$PROJECT_DIR$/src/parse/parseLines.ts" />
         <option value="$PROJECT_DIR$/src/parse/index.ts" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/components/BookMenu/index.tsx" />
         <option value="$PROJECT_DIR$/src/components/BookClippings/index.ts" />
         <option value="$PROJECT_DIR$/src/tool/date.ts" />
         <option value="$PROJECT_DIR$/src/components/BookClippings/index.tsx" />
         <option value="$PROJECT_DIR$/src/index.scss" />
-        <option value="$PROJECT_DIR$/src/themes/utils.scss" />
         <option value="$PROJECT_DIR$/src/components/BookClippings/index.module.scss" />
         <option value="$PROJECT_DIR$/src/pages/HomePage/mock.ts" />
         <option value="$PROJECT_DIR$/src/tests/mock.ts" />
@@ -98,12 +112,8 @@
         <option value="$PROJECT_DIR$/src/type/index.ts" />
         <option value="$PROJECT_DIR$/src/tool/parseLines.ts" />
         <option value="$PROJECT_DIR$/src/tool/index.ts" />
-        <option value="$PROJECT_DIR$/src/components/BookMenu/index.module.scss" />
         <option value="$PROJECT_DIR$/src/i18n/en-us.ts" />
         <option value="$PROJECT_DIR$/src/i18n/zh-cn.ts" />
-        <option value="$PROJECT_DIR$/src/pages/HomePage/index.tsx" />
-        <option value="$PROJECT_DIR$/src/components/TextInput/index.tsx" />
-        <option value="$PROJECT_DIR$/src/components/TextInput/index.module.scss" />
         <option value="$PROJECT_DIR$/src/pages/HomePage/index.module.scss" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/global.ts" />
@@ -114,10 +124,17 @@
         <option value="$PROJECT_DIR$/build/static/js/main.a0364ac7.chunk.js.map" />
         <option value="$PROJECT_DIR$/src/background.js" />
         <option value="$PROJECT_DIR$/src/index.tsx" />
-        <option value="$PROJECT_DIR$/public/background.js" />
         <option value="$PROJECT_DIR$/README-en.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/manifest.json" />
+        <option value="$PROJECT_DIR$/src/components/BookMenu/index.module.scss" />
+        <option value="$PROJECT_DIR$/public/background.js" />
+        <option value="$PROJECT_DIR$/src/pages/HomePage/index.tsx" />
+        <option value="$PROJECT_DIR$/src/components/BookMenu/index.tsx" />
+        <option value="$PROJECT_DIR$/src/components/TextInput/index.tsx" />
+        <option value="$PROJECT_DIR$/src/components/TextInput/index.module.scss" />
+        <option value="$PROJECT_DIR$/src/themes/utils.scss" />
       </list>
     </option>
   </component>
@@ -147,6 +164,23 @@
               <item name="my-clippings" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-clippings" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-clippings" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-clippings" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-clippings" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-clippings" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-clippings" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-clippings" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -201,12 +235,12 @@
       <workItem from="1560057172228" duration="185000" />
       <workItem from="1560063289284" duration="11912000" />
       <workItem from="1560128753316" duration="146000" />
-      <workItem from="1560253278916" duration="5622000" />
+      <workItem from="1560253278916" duration="7588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23003000" />
+    <option name="totallyTimeSpent" value="24969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="27" y="23" width="1286" height="762" extended-state="0" />
@@ -263,20 +297,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/BookClippings/index.ts" />
     <entry file="file://$PROJECT_DIR$/src/tool/date.ts" />
-    <entry file="file://$PROJECT_DIR$/src/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/themes/utils.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/BookClippings/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -302,9 +322,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/enMock.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/type/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -329,54 +346,6 @@
           <folding>
             <element signature="e#0#61#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/HomePage.test.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BookMenu/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BookMenu/index.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/HomePage/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TextInput/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TextInput/index.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -467,13 +436,6 @@
     <entry file="file://$PROJECT_DIR$/build/background.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/background.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/i18n/en-us.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -512,15 +474,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/HomePage.test.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        <state relative-caret-position="315">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BookMenu/index.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/enMock.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BookMenu/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/HomePage/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-117">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TextInput/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="64" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TextInput/index.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/themes/utils.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
         </state>
       </provider>
     </entry>

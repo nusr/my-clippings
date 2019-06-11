@@ -8,6 +8,7 @@ import BookMenu from '../../components/BookMenu'
 import BookClippings from '../../components/BookClippings'
 import _ from 'lodash'
 
+
 function getItemTitle(item: RecordItem): string {
     let key: string = item.title || ''
     const author: string = item.author || ''
@@ -31,7 +32,6 @@ const HomePage: React.FunctionComponent = () => {
     }, [contentList, currentMenu])
 
     function handleContentChange(data: string) {
-        console.log(data)
         const result: RecordItem[] = parseContent(data, zhCn)
         const temp: string[] = []
         result.forEach((item: RecordItem) => {
@@ -48,7 +48,6 @@ const HomePage: React.FunctionComponent = () => {
     function handleMenuChange(item: string) {
         setCurrentMenu(item)
     }
-
     const checkContent = _.isEmpty(contentList)
     const Content = () => (
         <div className={styles.content}>
@@ -66,7 +65,7 @@ const HomePage: React.FunctionComponent = () => {
 
     return (
         <div className={styles.container}>
-            <TextInput onChange={handleContentChange} />
+            <TextInput onChange={handleContentChange}/>
             {checkContent ? <EmptyTip/> : <Content/>}
 
         </div>
