@@ -11,12 +11,11 @@
 
 .content {
   display: flex;
+  box-shadow: $box-shadow;
 }
 
 .bookClippings {
   flex: 1;
-  border: 1px solid $border-color;
-  border-left: 0;
 }
 
 .emptyTip {

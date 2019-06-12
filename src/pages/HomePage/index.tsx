@@ -5,7 +5,6 @@ import {parseContent} from '../../tool'
 import {RecordItem} from '../../type'
 import BookMenu from '../../components/BookMenu'
 import BookClippings from '../../components/BookClippings'
-import _ from 'lodash'
 import Store from '../../store'
 
 function getItemTitle(item: RecordItem): string {
@@ -51,7 +50,7 @@ const HomePage: React.FunctionComponent = () => {
         setCurrentMenu(item)
     }
 
-    const checkContent = _.isEmpty(contentList)
+    // const checkContent = _.isEmpty(contentList)
     const Content = () => (
         <div className={styles.content}>
             <div className={styles.bookMenu}>
@@ -66,7 +65,7 @@ const HomePage: React.FunctionComponent = () => {
     return (
         <div className={styles.container}>
             <TextInput onChange={handleContentChange}/>
-            {checkContent ? null : <Content/>}
+            <Content/>
 
         </div>
     );

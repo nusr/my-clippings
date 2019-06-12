@@ -2,8 +2,8 @@
 
 .container {
   list-style: none;
-  border: 1px solid $border-color;
-  //min-height: $menu-width;
+  //box-shadow: $box-shadow;
+  border-right: 1px solid $border-color;
 }
 
 .item {
@@ -17,5 +17,16 @@
 }
 
 .active {
+  position: relative;
   color: $primary-color;
+  background-color: $menu-active-background;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-right: 3px solid $primary-color;
+    content: '';
+  }
 }

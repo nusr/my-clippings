@@ -1,17 +1,15 @@
 import React from 'react';
 import {RecordItem} from '../../type'
 import styles from './index.module.scss'
-import _ from 'lodash'
 
 type Props = {
     data: RecordItem[] | undefined
 };
+
 const BookClippings: React.FunctionComponent<Props> = ({
                                                            data = []
                                                        }) => {
-    if (_.isEmpty(data)) {
-        return null;
-    }
+
     return (
         <div className={styles.container}>
             {

@@ -7,7 +7,7 @@ export interface SecondLine {
     time: string;
     type: string;
     location: string;
-    page: string;
+    page?: string;
 }
 
 export interface RecordItem extends SecondLine, FirstLine {
