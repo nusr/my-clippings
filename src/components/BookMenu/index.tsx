@@ -17,7 +17,6 @@ const BookMenu: React.FunctionComponent<Props> = ({
         onChange(item)
     }
 
-
     return (
         <ul className={styles.container}>
             {

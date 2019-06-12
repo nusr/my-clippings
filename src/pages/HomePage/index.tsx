@@ -23,6 +23,8 @@ const HomePage: React.FunctionComponent = () => {
     const [menuList, setMenuList] = useState<string[]>([])
     const [currentMenu, setCurrentMenu] = useState<string>('')
     const [bookData, setBookData] = useState<RecordItem[]>([])
+
+
     useEffect(() => {
         const temp: RecordItem[] = contentList.filter(v => {
             const key: string = getItemTitle(v)

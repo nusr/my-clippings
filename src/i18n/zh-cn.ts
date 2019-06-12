@@ -12,5 +12,5 @@ export default {
     'tool.parseLines.pageText': '第',
     'tool.parseLines.locationType': /位置/,
     'tool.parseLines.locationText': '位置',
-    'components.TextInput.selectFileTip': "选择剪贴文件"
+    'components.TextInput.selectFileTip': "选择 My Clippings.txt"
 }

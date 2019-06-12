@@ -14,11 +14,9 @@ const TextInput: React.FunctionComponent<Props> = ({onChange}) => {
         const file: File = _.get(event, 'currentTarget.files[0]')
         const reader: FileReader = new FileReader();
         reader.readAsText(file);
-        reader.onload = function () {
+        reader.onload = () => {
             const temp: string = reader.result as string
-            if (!_.isEmpty(temp)) {
-                onChange(temp)
-            }
+            onChange(temp)
         }
     }
 

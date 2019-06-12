@@ -12,5 +12,5 @@ export default {
     'tool.parseLines.pageText': /on Page/,
     'tool.parseLines.locationType': /Loc./,
     'tool.parseLines.locationText': 'Loc.',
-    'components.TextInput.selectFileTip': "Browse your clippings file"
+    'components.TextInput.selectFileTip': "Browse My Clippings.txt"
 }
