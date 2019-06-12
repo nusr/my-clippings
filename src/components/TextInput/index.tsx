@@ -12,14 +12,13 @@ const TextInput: React.FunctionComponent<Props> = ({onChange}) => {
 
     function handleChange(event: React.SyntheticEvent) {
         const file: File = _.get(event, 'currentTarget.files[0]')
-        if (_.isEmpty(File)) {
-            return;
-        }
         const reader: FileReader = new FileReader();
         reader.readAsText(file);
         reader.onload = function () {
             const temp: string = reader.result as string
-            onChange(temp)
+            if (!_.isEmpty(temp)) {
+                onChange(temp)
+            }
         }
     }
 

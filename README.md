@@ -13,7 +13,9 @@
 
 ## 🏁 安装 <a name = "getting_started"></a>
 
-<a href="https://chrome.google.com/webstore/detail/my-clippings/pcfdnhenjhhcbfbanepfegljllniecpe"><img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_128x128.png" width="48" /></a>
+[![chrome](docs/chrome.png)](https://chrome.google.com/webstore/detail/my-clippings/pcfdnhenjhhcbfbanepfegljllniecpe)
+
+![demo](docs/demo.gif)
 
 ## ⛏️ 技术栈 <a name = "built_using"></a>
 

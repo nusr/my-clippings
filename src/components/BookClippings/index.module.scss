@@ -11,8 +11,15 @@
 
 .title {
   font-weight: bold;
+  padding-right: $base-distance / 2;
+}
+
+.location, .time {
+  padding: $base-distance / 2;
 }
 
 .info {
+  padding-top: $base-distance / 2;
+  padding-bottom: $base-distance / 2;
   color: $sub-content-color;
 }

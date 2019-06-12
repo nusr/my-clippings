@@ -23,7 +23,7 @@ const BookMenu: React.FunctionComponent<Props> = ({
             {
                 menuList.map((item: string) => (
                     <li key={item} onClick={() => handleClick(item)} className={styles.item} style={{
-                        fontWeight: value !== item ? 'normal' : 'bold'
+                        color: value !== item ? '' : '#0fd2fd'
                     }}>
                         <div className={styles.title}>{item}</div>
                     </li>

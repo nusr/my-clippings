@@ -12,7 +12,6 @@ const BookClippings: React.FunctionComponent<Props> = ({
     if (_.isEmpty(data)) {
         return null;
     }
-    console.log(data)
     return (
         <div className={styles.container}>
             {
@@ -24,9 +23,9 @@ const BookClippings: React.FunctionComponent<Props> = ({
                         </div>
                         <div className={styles.info}>
                             <span>{item.type}</span>
-                            <span>{item.location}</span>
+                            <span className={styles.location}>{item.location}</span>
                             <span>{item.page}</span>
-                            <span>{item.time}</span>
+                            <span className={styles.time}>{item.time}</span>
                         </div>
                         <div>
                             {item.text}

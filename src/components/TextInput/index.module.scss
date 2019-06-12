@@ -12,12 +12,9 @@
 }
 
 .label {
-  padding: $base-distance / 2;
+  padding: $base-distance / 4;
   font-weight: bold;
   cursor: pointer;
-  border: 1px solid $border-color;
-
-  &:hover {
-    color: $primary-color;
-  }
+  //border: 1px solid $border-color;
+  margin-bottom: $base-distance;
 }
