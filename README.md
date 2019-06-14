@@ -5,12 +5,17 @@
 
 <h1 align="center">My Clippings</h1>
 
-<div align="center">
-
 [![build status](https://img.shields.io/travis/nusr/my-clippings/master.svg?style=flat-square)](https://travis-ci.org/nusr/my-clippings)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-
-</div>
+[![codecov](https://codecov.io/gh/nusr/my-clippings/branch/master/graph/badge.svg)](https://codecov.io/gh/nusr/my-clippings)
+[![codebeat badge](https://codebeat.co/badges/040d3a7f-e8fd-4437-afc4-01138cfd4680)](https://codebeat.co/projects/github-com-nusr-my-clippings-master)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5ab5984be9c840f194d1e5baa7b81b76)](https://www.codacy.com/app/nusr/my-clippings?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nusr/my-clippings&amp;utm_campaign=Badge_Grade)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnusr%2Fmy-clippings.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnusr%2Fmy-clippings?ref=badge_shield)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/nusr/my-clippings/master.svg)
+![GitHub commit activity the past week, 4 weeks, year](https://img.shields.io/github/commit-activity/y/nusr/my-clippings.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/nusr/my-clippings.svg)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/nusr/my-clippings.svg)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/nusr/my-clippings/pull/new)
+[![MIT License](https://img.shields.io/github/license/nusr/my-clippings.svg)](http://opensource.org/licenses/MIT)
 
 ---
 
