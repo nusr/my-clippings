@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://chrome.google.com/webstore/detail/my-clippings/pcfdnhenjhhcbfbanepfegljllniecpe" rel="noopener">
- <img src="public/icon-48.png" alt="Project logo"></a>
+  <img src="public/icon-48.png" alt="Project logo"></a>
 </div>
 
 <h1 align="center">My Clippings</h1>
@@ -28,7 +28,6 @@
 ## 🏁 安装 <a name = "getting_started"></a>
 
 [![chrome](docs/chrome.png)](https://chrome.google.com/webstore/detail/my-clippings/pcfdnhenjhhcbfbanepfegljllniecpe)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fnusr%2Fmy-clippings.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fnusr%2Fmy-clippings?ref=badge_shield)
 
 ![demo](docs/demo.gif)
 
@@ -46,7 +45,3 @@
 - [x] 解决标注
 - [ ] 单词本
 - [ ] 多语言
-
-
-## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fnusr%2Fmy-clippings.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fnusr%2Fmy-clippings?ref=badge_large)
