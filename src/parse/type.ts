@@ -13,7 +13,3 @@ export interface SecondLine {
 export interface RecordItem extends SecondLine, FirstLine {
     text: string;
 }
-
-export interface LanguageData {
-    [key: string]: string;
-}

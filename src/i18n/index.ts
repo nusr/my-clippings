@@ -9,16 +9,22 @@ export type LanguageItem = {
     value: string;
     data: LanguageData;
 }
-const LANGUAGE_MAP: LanguageItem[] = [
+
+export enum LanguageMap {
+    zhCN = 'zh-CN',
+    enUS = 'en-US'
+}
+
+const LANGUAGE_LIST: LanguageItem[] = [
     {
         label: '中文',
-        value: 'zh-cn',
+        value: LanguageMap.zhCN,
         data: zhCN
     },
     {
         label: 'English',
-        value: 'en-us',
+        value: LanguageMap.enUS,
         data: enUS
     }
 ]
-export default LANGUAGE_MAP;
+export default LANGUAGE_LIST;

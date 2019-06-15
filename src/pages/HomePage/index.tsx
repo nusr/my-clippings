@@ -1,20 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import styles from "./index.module.scss";
 import TextInput from '../../components/TextInput'
-import {parseContent} from '../../tool'
-import {RecordItem} from '../../type'
+import parseContent from '../../parse'
+import {RecordItem} from '../../parse/type'
 import BookMenu from '../../components/BookMenu'
 import BookClippings from '../../components/BookClippings'
 import Store from '../../store'
-
-function getItemTitle(item: RecordItem): string {
-    let key: string = item.title || ''
-    const author: string = item.author || ''
-    if (author) {
-        key = `${key}-${author}`
-    }
-    return key;
-}
+import {getItemTitle} from '../../utils'
 
 const HomePage: React.FunctionComponent = () => {
     const {languageData} = Store.useContainer()

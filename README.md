@@ -8,7 +8,6 @@
 [![build status](https://img.shields.io/travis/nusr/my-clippings/master.svg?style=flat-square)](https://travis-ci.org/nusr/my-clippings)
 [![codecov](https://codecov.io/gh/nusr/my-clippings/branch/master/graph/badge.svg)](https://codecov.io/gh/nusr/my-clippings)
 [![codebeat badge](https://codebeat.co/badges/040d3a7f-e8fd-4437-afc4-01138cfd4680)](https://codebeat.co/projects/github-com-nusr-my-clippings-master)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5ab5984be9c840f194d1e5baa7b81b76)](https://www.codacy.com/app/nusr/my-clippings?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nusr/my-clippings&amp;utm_campaign=Badge_Grade)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnusr%2Fmy-clippings.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnusr%2Fmy-clippings?ref=badge_shield)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/nusr/my-clippings/master.svg)
 ![GitHub commit activity the past week, 4 weeks, year](https://img.shields.io/github/commit-activity/y/nusr/my-clippings.svg)

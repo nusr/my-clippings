@@ -1,5 +1,5 @@
 import React from 'react';
-import {RecordItem} from '../../type'
+import {RecordItem} from '../../parse/type'
 import styles from './index.module.scss'
 
 type Props = {
