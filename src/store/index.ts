@@ -2,7 +2,7 @@ import {createContainer} from 'unstated-next'
 import {useEffect, useState} from 'react'
 import data, {LanguageData, LanguageItem, LanguageMap} from '../i18n'
 
-function useLanguage(initLang: LanguageMap = LanguageMap.zhCN) {
+function useLanguage(initLang: LanguageMap = LanguageMap.enUS) {
     // @ts-ignore
     let [languageData, setLanguageData] = useState<LanguageData>([])
     let [language, setLanguage] = useState<LanguageMap>(initLang)
@@ -20,4 +20,11 @@ function useLanguage(initLang: LanguageMap = LanguageMap.zhCN) {
     }
 }
 
-export default createContainer(useLanguage)
+const Store = createContainer(useLanguage)
+
+export function getI18n(data: string): string {
+    const {languageData} = Store.useContainer();
+    return languageData[data]
+}
+
+export default Store;

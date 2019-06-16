@@ -34,7 +34,7 @@
 
 - Create-React-App
 - React.js
-- Lodash
+- Ramda
 - Typescript
 
 ## Feature

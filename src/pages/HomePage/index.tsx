@@ -9,7 +9,7 @@ import Store from '../../store'
 import {getItemTitle} from '../../utils'
 
 const HomePage: React.FunctionComponent = () => {
-    const {languageData} = Store.useContainer()
+    const {language} = Store.useContainer()
     const [contentList, setContentList] = useState<RecordItem[]>([])
     const [menuList, setMenuList] = useState<string[]>([])
     const [currentMenu, setCurrentMenu] = useState<string>('')
@@ -25,7 +25,7 @@ const HomePage: React.FunctionComponent = () => {
     }, [contentList, currentMenu])
 
     function handleContentChange(data: string) {
-        const result: RecordItem[] = parseContent(data, languageData)
+        const result: RecordItem[] = parseContent(data, language)
         const temp: string[] = []
         result.forEach((item: RecordItem) => {
             const key: string = getItemTitle(item)

@@ -13,7 +13,7 @@ const BookClippings: React.FunctionComponent<Props> = ({
     return (
         <div className={styles.container}>
             {
-                data.map((item: RecordItem) => (
+                data.map((item: RecordItem): React.ReactNode => (
                     <div key={item.time + item.title + item.location} className={styles.item}>
                         <div>
                             <span className={styles.title}>{item.title}</span>

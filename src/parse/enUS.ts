@@ -1,13 +1,14 @@
 import BaseParse from './BaseParse'
 import {SecondLine} from "./type";
-import _ from "lodash";
+import {isString} from '../utils'
+import * as R from 'ramda'
 
 class EnglishParse extends BaseParse {
 
 
     parseLocation(lines: string[]): SecondLine {
         const [, line,] = lines
-        if (!_.isString(line)) {
+        if (!isString(line)) {
             return {
                 type: '',
                 time: '',
@@ -38,14 +39,14 @@ class EnglishParse extends BaseParse {
             // on Page (if exists)
             if (el.match(/on Page/)) {
                 const temp: string[] = el.split('on Page');
-                singleRecord.page = this.trim(_.last(temp) || '');
+                singleRecord.page = this.trim(R.last(temp) || '');
             }
 
 
             // location
             if (el.match(/Loc./)) {
                 const temp: string[] = el.split('Loc.');
-                singleRecord.location = this.trim(_.last(temp) || '');
+                singleRecord.location = this.trim(R.last(temp) || '');
             }
         }
         return singleRecord as SecondLine;

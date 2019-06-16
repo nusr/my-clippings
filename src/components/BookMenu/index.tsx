@@ -32,7 +32,7 @@ const BookMenu: React.FunctionComponent<Props> = ({
         const start: number = window.pageYOffset;
         let i: number = 0;
         let interval: any = setInterval(() => {
-            const next = Math.floor(easeInOutQuad(10 * i, start, -start, 500));
+            const next: number = Math.floor(easeInOutQuad(10 * i, start, -start, 500));
             if (next <= backPosition) {
                 window.scrollTo(0, backPosition);
                 document.documentElement.scrollTop = 0;
@@ -49,7 +49,7 @@ const BookMenu: React.FunctionComponent<Props> = ({
     return (
         <ul className={styles.container}>
             {
-                menuList.map((item: string) => (
+                menuList.map((item: string): React.ReactNode => (
                     <li key={item} onClick={() => handleClick(item)}
                         className={`${styles.item} ${value === item ? styles.active : ''}`}>
                         <div className={styles.title}>{item}</div>

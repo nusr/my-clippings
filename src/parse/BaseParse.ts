@@ -1,6 +1,6 @@
 import {RecordItem, FirstLine, SecondLine} from './type'
-import _ from "lodash";
-
+import * as R from 'ramda'
+import {isString} from '../utils'
 
 abstract class BaseParse {
     private dataText: string;
@@ -17,10 +17,9 @@ abstract class BaseParse {
     }
 
 
-
     parseTitle(lines: string[]): FirstLine {
         const [line,] = lines
-        if (!_.isString(line)) {
+        if (!isString(line)) {
             return {
                 title: '',
                 author: ''
@@ -37,7 +36,7 @@ abstract class BaseParse {
 
     parseContent(lines: string[]): string {
         const [, , line,] = lines
-        if (!_.isString(line)) {
+        if (!isString(line)) {
             return ''
         }
         return this.trim(line);
@@ -79,6 +78,7 @@ abstract class BaseParse {
         }
         return result;
     }
+
     splitRecords(data: string): string[] {
         return data.split('==========')
     }
@@ -93,11 +93,12 @@ abstract class BaseParse {
         })
         return lines;
     }
+
     trim(data: string): string {
-        if (!_.isString(data)) {
+        if (!isString(data)) {
             return ''
         }
-        return _.trim(data)
+        return R.trim(data)
     }
 
 }

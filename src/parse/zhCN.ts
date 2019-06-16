@@ -1,12 +1,13 @@
 import BaseParse from './BaseParse'
 import {SecondLine} from "./type";
-import _ from "lodash";
+import {isString} from '../utils'
+import * as R from 'ramda'
 
 class ChineseParse extends BaseParse {
 
     parseLocation(lines: string[]): SecondLine {
         const [, line,] = lines
-        if (!_.isString(line)) {
+        if (!isString(line)) {
             return {
                 type: '',
                 time: '',
@@ -37,13 +38,13 @@ class ChineseParse extends BaseParse {
             // on Page (if exists)
             if (el.match(/第/)) {
                 const temp: string[] = el.split('第');
-                singleRecord.page = this.trim(_.last(temp) || '');
+                singleRecord.page = this.trim(R.last(temp) || '');
             }
 
             // location
             if (el.match(/位置/)) {
                 const temp: string[] = el.split('位置');
-                singleRecord.location = this.trim(_.last(temp) || '');
+                singleRecord.location = this.trim(R.last(temp) || '');
             }
         }
         return singleRecord as SecondLine;
