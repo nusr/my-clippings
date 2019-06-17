@@ -18,15 +18,15 @@
 
 ---
 
-English | [中文](README-zh.md)
+中文 | [English](README.md)
 
-Organizing your Kindle Highlight,Bookmark and Notes so easy.
+整理 Kindle 标注、书签和笔记从未如此简单！
 
-## 🧐 About
+## 🧐 介绍
 
-A Chrome Extension Organizes your Kindle Highlight,Bookmark and Notes。
+整理 Kindle 标注、书签和笔记的 Chrome 扩展。
 
-## 🏁 Installing
+## 🏁 安装
 
 [![chrome](docs/chrome.png)](https://chrome.google.com/webstore/detail/my-clippings/pcfdnhenjhhcbfbanepfegljllniecpe)
 
@@ -34,13 +34,13 @@ A Chrome Extension Organizes your Kindle Highlight,Bookmark and Notes。
 
 ## 🎈 Feature
 
-- [x] Parse Notes
-- [x] Parse Bookmark
-- [x] Parse Highlight
-- [x] Support English and Chinese
-- [ ] Word book
+- [x] 解析笔记
+- [x] 解析书签
+- [x] 解析标注
+- [x] 多语言
+- [ ] 单词本
 
-## ⛏️ Built Using
+## ⛏️ 技术栈
 
 - Create-React-App
 - React.js
