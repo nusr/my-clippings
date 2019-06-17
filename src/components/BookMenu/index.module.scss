@@ -2,8 +2,8 @@
 
 .container {
   list-style: none;
-  //box-shadow: $box-shadow;
-  border-right: 1px solid $border-color;
+  width: 100%;
+  border: 1px solid $border-color;
 }
 
 .item {
@@ -12,7 +12,6 @@
 }
 
 .title {
-  padding: $base-distance / 4;
   word-break: break-all;
 }
 

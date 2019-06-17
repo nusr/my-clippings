@@ -5,24 +5,21 @@ export type LanguageData = {
     [key: string]: string | RegExp;
 }
 export type LanguageItem = {
-    label: string;
     value: string;
     data: LanguageData;
 }
 
 export enum LanguageMap {
-    zhCN = 'zh-CN',
-    enUS = 'en-US'
+    zhCN = '中文',
+    enUS = 'English'
 }
 
 const LANGUAGE_LIST: LanguageItem[] = [
     {
-        label: '中文',
         value: LanguageMap.zhCN,
         data: zhCN
     },
     {
-        label: 'English',
         value: LanguageMap.enUS,
         data: enUS
     }

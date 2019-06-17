@@ -1,0 +1,18 @@
+@import '../../themes/utils';
+
+.container {
+  color: $primary-color;
+  width: 20px;
+  position: relative;
+
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  width: 100px;
+  display: none;
+  text-align: center;
+  background-color: #fff;
+}

@@ -6,7 +6,8 @@ import {RecordItem} from '../../parse/type'
 import BookMenu from '../../components/BookMenu'
 import BookClippings from '../../components/BookClippings'
 import Store from '../../store'
-import {getItemTitle} from '../../utils'
+import {getItemTitle, backToTop} from '../../utils'
+import SelectLang from '../../components/SelectLang'
 
 const HomePage: React.FunctionComponent = () => {
     const {language} = Store.useContainer()
@@ -39,6 +40,7 @@ const HomePage: React.FunctionComponent = () => {
     }
 
     function handleMenuChange(item: string) {
+        backToTop()
         setCurrentMenu(item)
     }
 
@@ -56,7 +58,10 @@ const HomePage: React.FunctionComponent = () => {
 
     return (
         <div className={styles.container}>
-            <TextInput onChange={handleContentChange}/>
+            <div className={styles.header}>
+                <TextInput onChange={handleContentChange}/>
+                <SelectLang className={styles.lang}/>
+            </div>
             <Content/>
 
         </div>

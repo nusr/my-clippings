@@ -11,11 +11,11 @@
 
 .content {
   display: flex;
-  box-shadow: $box-shadow;
 }
 
 .bookClippings {
   flex: 1;
+  border: 1px solid $border-color;
 }
 
 .emptyTip {
@@ -23,4 +23,16 @@
   font-weight: bold;
   text-align: center;
   color: $primary-color;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lang {
+  position: absolute;
+  right: 0;
 }
