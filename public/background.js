@@ -3,6 +3,7 @@ function activeNewTab() {
     if (!chrome) {
         return;
     }
+    // 点击扩展图标，打开新的 Tag 页面
     chrome.browserAction.onClicked.addListener(function () {
         const url = chrome.extension.getURL('index.html');
         if (window.tabId) {

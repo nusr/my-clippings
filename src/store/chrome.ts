@@ -1,4 +1,4 @@
-const LANGUAGE_KEY: string = 'language'
+const LANGUAGE_KEY: string = 'my-clippings-language'
 const NODE_ENV: string = process.env.NODE_ENV
 // @ts-ignore
 const chrome = window.chrome;
@@ -8,6 +8,7 @@ export function setChromeLang(value: string) {
         localStorage.setItem(LANGUAGE_KEY, value)
         return;
     }
+    // 同步存储的值
     chrome.storage.sync.set({[LANGUAGE_KEY]: value});
 }
 

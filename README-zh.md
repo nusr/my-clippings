@@ -46,3 +46,10 @@
 - React.js
 - Ramda
 - Typescript
+
+## 开发
+
+```bash
+$ npm i
+$ npm start
+```

@@ -46,3 +46,10 @@ A Chrome Extension Organizes your Kindle Highlight,Bookmark and Notes。
 - React.js
 - Ramda
 - Typescript
+
+## Development
+
+```bash
+$ npm i
+$ npm start
+```
