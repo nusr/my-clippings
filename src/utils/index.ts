@@ -9,7 +9,7 @@ export function getItemTitle(item: RecordItem): string {
     return key;
 }
 
-export function isString(str: string) {
+export function isString(str: any) {
     return Object.prototype.toString.call(str) === '[object String]'
 }
 
