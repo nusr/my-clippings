@@ -12,8 +12,7 @@
     "ramda": "^0.26.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
-    "unstated-next": "^1.1.0"
+    "react-scripts": "3.0.1"
   },
   "homepage": ".",
   "devDependencies": {

@@ -1,15 +1,15 @@
 function activeNewTab() {
-    const chrome = window.chrome;
+    var chrome = window.chrome;
     if (!chrome) {
         return;
     }
     // 点击扩展图标，打开新的 Tag 页面
     chrome.browserAction.onClicked.addListener(function () {
-        const url = chrome.extension.getURL('index.html');
+        var url = chrome.extension.getURL('index.html');
         if (window.tabId) {
             chrome.tabs.update(window.tabId, {selected: true});
         } else {
-            chrome.tabs.create({url}, function (tab) {
+            chrome.tabs.create({url: url}, function (tab) {
                 window.tabId = tab.id;
             });
         }
