@@ -4,7 +4,7 @@ export interface FirstLine {
 }
 
 export interface SecondLine {
-    time: string;
+    time: number;
     type: string;
     location: string;
     page?: string;

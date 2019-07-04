@@ -11,7 +11,7 @@ class EnglishParse extends BaseParse {
         if (!isString(line)) {
             return {
                 type: '',
-                time: '',
+                time: 0,
                 location: ''
             }
         }
@@ -24,8 +24,8 @@ class EnglishParse extends BaseParse {
             // @todo - describe time parsing
             if (el.match(/Added on/)) {
                 let [, temp] = el.split(',');
-                // TODO 日期格式化问题 不同语言不一致
-                singleRecord.time = temp;
+                temp = temp.replace('Greenwich Mean Time', 'GMT');
+                singleRecord.time = new Date(temp).getTime()
             }
             // type: Highlight | Bookmark | Note
             if (el.match(/Highlight/)) {
@@ -39,14 +39,14 @@ class EnglishParse extends BaseParse {
             // on Page (if exists)
             if (el.match(/on Page/)) {
                 const temp: string[] = el.split('on Page');
-                singleRecord.page = this.trim(R.last(temp) || '');
+                singleRecord.page = 'on Page ' + this.trim(R.last(temp) || '');
             }
 
 
             // location
             if (el.match(/Loc./)) {
                 const temp: string[] = el.split('Loc.');
-                singleRecord.location = this.trim(R.last(temp) || '');
+                singleRecord.location = '#' + this.trim(R.last(temp) || '');
             }
         }
         return singleRecord as SecondLine;

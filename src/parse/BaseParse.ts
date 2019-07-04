@@ -13,7 +13,11 @@ abstract class BaseParse {
 
     getResult(): RecordItem[] {
         const records: string[] = this.splitRecords(this.dataText)
-        return this.parseLines(records)
+        const list: RecordItem[] = this.parseLines(records)
+        list.sort((a: RecordItem, b: RecordItem): number => {
+            return a.time - b.time
+        })
+        return list;
     }
 
 
@@ -51,7 +55,7 @@ abstract class BaseParse {
             let singleRecord: RecordItem = {
                 title: '',
                 author: '',
-                time: '',
+                time: 0,
                 type: '',
                 location: '',
                 text: ''
@@ -70,11 +74,12 @@ abstract class BaseParse {
                 }
 
             // third line - content
-            const third: string = this.parseContent(lines);
-            if (third) {
-                singleRecord.text = third;
+            const third: string = this.parseContent(lines) || ''
+            singleRecord.text = third
+            if (singleRecord.title) {
                 result.push(singleRecord);
             }
+
         }
         return result;
     }

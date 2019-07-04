@@ -38,7 +38,7 @@ A Chrome Extension Organizes your Kindle Highlight,Bookmark and Notes。
 - [x] Parse Bookmark
 - [x] Parse Highlight
 - [x] Support English and Chinese
-- [ ] Word book
+- ~~[ ] Word book~~
 
 ## ⛏️ Built Using
 
