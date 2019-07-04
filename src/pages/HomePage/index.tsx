@@ -8,7 +8,9 @@ import BookClippings from '../../components/BookClippings'
 import Store from '../../store'
 import {getItemTitle, backToTop} from '../../utils'
 import SelectLang from '../../components/SelectLang'
+import BackToTop from '../../components/BackToTop'
 
+let interval: any;
 const HomePage: React.FunctionComponent = () => {
     const {language} = Store.useContainer()
     const [contentList, setContentList] = useState<RecordItem[]>([])
@@ -23,6 +25,11 @@ const HomePage: React.FunctionComponent = () => {
             return key && key === currentMenu
         })
         setBookData(temp)
+        return () => {
+            if (interval) {
+                clearInterval(interval)
+            }
+        }
     }, [contentList, currentMenu])
 
     function handleContentChange(data: string) {
@@ -40,21 +47,9 @@ const HomePage: React.FunctionComponent = () => {
     }
 
     function handleMenuChange(item: string) {
-        backToTop()
+        interval = backToTop()
         setCurrentMenu(item)
     }
-
-    // const checkContent = _.isEmpty(contentList)
-    const Content = () => (
-        <div className={styles.content}>
-            <div className={styles.bookMenu}>
-                <BookMenu menuList={menuList} onChange={handleMenuChange} value={currentMenu}/>
-            </div>
-            <div className={styles.bookClippings}>
-                <BookClippings data={bookData}/>
-            </div>
-        </div>
-    )
 
     return (
         <div className={styles.container}>
@@ -62,7 +57,15 @@ const HomePage: React.FunctionComponent = () => {
                 <TextInput onChange={handleContentChange}/>
                 <SelectLang className={styles.lang}/>
             </div>
-            <Content/>
+            <div className={styles.content}>
+                <div className={styles.bookMenu}>
+                    <BookMenu menuList={menuList} onChange={handleMenuChange} value={currentMenu}/>
+                </div>
+                <div className={styles.bookClippings}>
+                    <BookClippings data={bookData}/>
+                    <BackToTop/>
+                </div>
+            </div>
 
         </div>
     );

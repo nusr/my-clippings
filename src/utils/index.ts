@@ -56,8 +56,11 @@ function easeInOutQuad(t: number, b: number, c: number, d: number): number {
     return (-c / 2) * (--t * (t - 2) - 1) + b;
 }
 
-
-export function backToTop(backPosition: number = 0): void {
+/**
+ * 返回页面顶部
+ * @param backPosition
+ */
+export function backToTop(backPosition: number = 0) {
     const start: number = window.pageYOffset;
     let i: number = 0;
     let interval: any = setInterval(() => {
@@ -72,4 +75,5 @@ export function backToTop(backPosition: number = 0): void {
         }
         i++;
     }, 16.7);
+    return interval;
 }

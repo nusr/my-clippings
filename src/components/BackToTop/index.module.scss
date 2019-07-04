@@ -1,0 +1,24 @@
+@import '../../themes/utils';
+
+.container {
+  position: fixed;
+  text-align: center;
+  cursor: pointer;
+  right: 50px;
+  bottom: 50px;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  border-radius: 4px;
+  background: #e7eaf1;
+  display: none;
+
+  &:hover {
+    background: $border-color;
+  }
+}
+
+.icon {
+  fill: $primary-color;
+  background: none;
+}
