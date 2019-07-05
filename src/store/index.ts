@@ -6,7 +6,7 @@ import {setChromeLang} from './chrome'
 
 function useLanguage(initLang: LanguageMap) {
     let [languageData, setLanguageData] = useState<LanguageData>({})
-    let [language, setLanguage] = useState<LanguageMap>(initLang || LanguageMap.enUS)
+    let [language, setLanguage] = useState<LanguageMap>(initLang || LanguageMap.zhCN)
     const changeLanguage = (lang: LanguageMap) => {
         setLanguage(lang)
         setChromeLang(lang)

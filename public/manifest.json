@@ -2,8 +2,8 @@
   "name": "My Clippings",
   "short_name": "Clippings",
   "description": "Organizing your Kindle Highlight、Bookmark and Notes so easy.",
-  "version": "0.0.4",
-  "version_name": "0.0.4",
+  "version": "0.0.6",
+  "version_name": "0.0.6",
   "manifest_version": 2,
   "author": "Steve Xu",
   "browser_action": {

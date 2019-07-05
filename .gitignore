@@ -8,7 +8,7 @@
 .vscode
 # testing
 /coverage
-
+*.zip
 # production
 /build
 

@@ -11,7 +11,7 @@ export type LanguageItem = {
 
 export enum LanguageMap {
     zhCN = '中文',
-    enUS = 'English'
+    enUS = 'English',
 }
 
 const LANGUAGE_LIST: LanguageItem[] = [
