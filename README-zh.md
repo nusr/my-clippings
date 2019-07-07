@@ -53,3 +53,7 @@
 $ npm i
 $ npm start
 ```
+
+## 博客
+
+- [使用 Create-React-App 开发 Chrome 扩展](https://nusr.github.io/post/2019/2019-07-07-create-react-app-chrome-extension/)
