@@ -37,7 +37,7 @@ const HomePage: React.FunctionComponent = () => {
         const temp: string[] = []
         result.forEach((item: RecordItem) => {
             const key: string = getItemTitle(item)
-            if (temp && !temp.includes(key)) {
+            if (!temp.includes(key)) {
                 temp.push(key)
             }
         })
