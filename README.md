@@ -9,6 +9,7 @@
 [![codecov](https://codecov.io/gh/nusr/my-clippings/branch/master/graph/badge.svg)](https://codecov.io/gh/nusr/my-clippings)
 [![codebeat badge](https://codebeat.co/badges/040d3a7f-e8fd-4437-afc4-01138cfd4680)](https://codebeat.co/projects/github-com-nusr-my-clippings-master)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnusr%2Fmy-clippings.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnusr%2Fmy-clippings?ref=badge_shield)
+[![DeepScan grade](https://deepscan.io/api/teams/4611/projects/6383/branches/52944/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=4611&pid=6383&bid=52944)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/nusr/my-clippings/master.svg)
 ![GitHub commit activity the past week, 4 weeks, year](https://img.shields.io/github/commit-activity/y/nusr/my-clippings.svg)
 ![GitHub top language](https://img.shields.io/github/languages/top/nusr/my-clippings.svg)
