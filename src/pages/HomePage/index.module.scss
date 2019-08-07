@@ -1,10 +1,12 @@
 @import '../../themes/utils.scss';
 
 .container {
-  padding: $base-distance;
+  padding: $base-distance ;
 }
 
-
+.wrapper{
+  padding: 0 $base-distance * 3;
+}
 .bookMenu {
   width: $menu-width;
 }
@@ -26,6 +28,7 @@
 }
 
 .header {
+
   position: relative;
   display: flex;
   justify-content: center;

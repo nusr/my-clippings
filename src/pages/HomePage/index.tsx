@@ -9,7 +9,7 @@ import Store from '../../store'
 import {getItemTitle, backToTop} from '../../utils'
 import SelectLang from '../../components/SelectLang'
 import BackToTop from '../../components/BackToTop'
-
+import Github from '../../components/GIthub'
 let interval: any;
 const HomePage: React.FunctionComponent = () => {
     const {language} = Store.useContainer()
@@ -53,9 +53,12 @@ const HomePage: React.FunctionComponent = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.header}>
-                <TextInput onChange={handleContentChange}/>
-                <SelectLang className={styles.lang}/>
+            <div className={styles.wrapper}>
+                <Github link="https://github.com/nusr/my-clippings"/>
+                <div className={styles.header}>
+                    <TextInput onChange={handleContentChange}/>
+                    <SelectLang className={styles.lang}/>
+                </div>
             </div>
             <div className={styles.content}>
                 <div className={styles.bookMenu}>
